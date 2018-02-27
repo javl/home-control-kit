@@ -16,3 +16,5 @@ interface will be available on ```localhost:3000```.
 The CSS files contain some instances of ```cursor: none;``` which you
 might want to remove or change to ```cursor: inherit;``` when presenting on
 device with a cursor (instead of on a tablet).
+
+![Home Control Kit](img.jpg)
