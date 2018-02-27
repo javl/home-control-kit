@@ -1,4 +1,4 @@
-# home-control-kit
+# Home Control Kit #
 
 The Home Control Kit is a speculative installation showing how different
 types of data can be used and interpreted by an algorithm to generate a
