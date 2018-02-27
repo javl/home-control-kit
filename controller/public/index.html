@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+	<title>HOME CONTROL KIT</title>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+	<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="weather-icons/css/weather-icons.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<div class="top-bar">
+		<h1><a href="/">HOME CONTROL KIT</a></h1>
+		<i class="right fa fa-2x fa-wifi"></i>
+		<i class="right fa fa-2x fa-bluetooth-b"></i>
+		<!-- <i class="clock clock-top right"></i> -->
+	</div>
+
+	<div class="kids rounded">
+		<h3>De kinderen</h3>
+		<div>
+			<div class="color-circle-1"></div>
+			<div class="kid left">
+				<div class="kid-score kid-1">8.6</div>
+				<div class="kid-1 circle"></div>
+				<div class="color-dot color-1"></div>
+				<div class="kid-name">Sem</div>
+			</div>
+
+			<div class="color-circle-2"></div>
+			<div class="kid left">
+				<div class="kid-score kid-2">5.3</div>
+				<div class="kid-2 circle"></div>
+				<div class="color-dot color-2"></div>
+				<div class="kid-name">Sophie</div>
+			</div>
+
+			<div class="color-circle-3"></div>
+			<div class="kid left">
+				<div class="kid-score kid-3">7.4</div>
+				<div class="kid-3 circle"></div>
+				<div class="color-dot color-3"></div>
+				<div class="kid-name">Lucas</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="history rounded">
+		<h3>Score geschiedenis</h3>
+		<div class="content">
+			<canvas id="score-canvas" width="300" height="100"></canvas>
+		</div>
+	</div>
+
+	<div class="location rounded">
+		<h3>Huidige locaties</h3>
+		<div class="content">
+		<img src="locations.png"/>
+		</div>
+	</div>
+
+	<div class="priorities rounded">
+		<h3>Prioriteiten</h3>
+		<div class="content">
+			<div class="priority_text">omgang met anderen</div> <div class="slider" data-cat="0"></div>
+			<div class="priority_text">schoolresultaten</div><div class="slider" data-cat="1"></div>
+			<div class="priority_text">taakjes</div> <div class="slider" data-cat="2"></div>
+			<div class="priority_text">gezonde voeding</div> <div class="slider" data-cat="3"></div>
+			<div class="priority_text">verzorgen huisdieren</div> <div class="slider" data-cat="4"></div>
+		</div>
+	</div>
+
+	<div class="today rounded">
+		<h3>Vandaag</h3>
+		<div class="content">
+			<div class="weather">3&deg; <i class="wi wi-day-cloudy"></i></div>
+			<div class="clock clock-center"></div>
+			<div class="date"></div>
+		</div>
+	</div>
+
+	<div class="log rounded">
+		<h3>Gebeurtenissen</h3>
+		<div class="content">
+			<ul class="event-log"></ul>
+		</div>
+	</div>
+
+<script src="socket.io-1.2.0.js"></script>
+<script src="jquery.min.js"></script>
+<script src="jquery-circle-progress/dist/circle-progress.js"></script>
+<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script type="text/javascript" src="jquery.linkedsliders.js"></script>
+<script src="script.js"></script>
+<script>
+	// var socket = io();
+	// $('form').submit(function(){
+	// 	socket.emit('chat message', $('#m').val());
+	// 	$('#m').val('');
+	// 	return false;
+	// });
+	// socket.on('chat message', function(msg){
+	// 	$('#messages').append($('<li>').text(msg));
+	// });
+
+	</script>
+</body>
+</html>
