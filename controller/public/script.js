@@ -516,7 +516,7 @@ $( ".slider" ).slider({
 // Set the clock to the current time
 function setClock(){
 	var dateObj = new Date();
-	var hours = dateObj.getHours() - 5;
+	var hours = dateObj.getHours();
 	var minutes = dateObj.getMinutes();
 	$('.clock').html(hours+":"+minutes);
 }
@@ -530,7 +530,7 @@ function setDate(){
 	var dateObj = new Date();
 	var month = months[dateObj.getUTCMonth()]; //months from 1-12
 	var dayName = days[dateObj.getDay];
-	var day = dateObj.getUTCDate() - 1;
+	var day = dateObj.getUTCDate();
 	if(day < 10){
 		day = "0"+day;
 	}
